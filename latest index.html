@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FOMS</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <style>
     * {
       margin: 0;
@@ -19,7 +19,6 @@
       color: #333;
     }
 
-    /* Navbar */
     .navbar {
       background-color: #B22222;
       padding: 14px 20px;
@@ -88,7 +87,6 @@
       color: white;
     }
 
-    /* Login form dropdown */
     .login-form {
       position: absolute;
       top: 50px;
@@ -125,21 +123,6 @@
       background-color: #8B1A1A;
     }
 
-    .login-form p {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .login-form a {
-      color: #B22222;
-      text-decoration: none;
-    }
-
-    .login-form a:hover {
-      text-decoration: underline;
-    }
-
-    /* Landing section */
     .landingpage {
       display: flex;
       width: 100%;
@@ -173,29 +156,36 @@
       z-index: 5;
     }
 
-    /* Responsive */
-    @media screen and (max-width: 768px) {
-      .landingpage img:nth-child(3),
-      .landingpage img:nth-child(4) {
-        display: none;
-      }
-
-      .overlay-text {
-        font-size: 5vw;
-        padding: 15px;
-      }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    @media screen and (max-width: 480px) {
-      .landingpage img:nth-child(2) {
-        display: none;
-      }
-
-      .nav-menu {
-        display: none;
-      }
+    h2 {
+      margin-bottom: 20px;
+      color: #B22222;
     }
 
+    .categories span {
+      display: inline-block;
+      background: #ffd700;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .contact-info, .how-it-works ul, .social-links {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .social-links a {
+      color: #B22222;
+      margin-right: 15px;
+      font-size: 24px;
+    }
   </style>
 </head>
 
@@ -205,25 +195,23 @@
       <a href="#" class="logo">FoodOrder</a>
       <div class="nav-buttons">
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="admin.html" class="nav-link">Admin</a></li>
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Admin</a></li>
         </ul>
         <button id="toggle-login" class="btn">Login</button>
       </div>
-
       <div id="login-form" class="login-form">
         <form id="login-section">
-          <input type="email" id="login-email" placeholder="Email" required />
-          <input type="password" id="login-password" placeholder="Password" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
           <button type="submit">Sign In</button>
           <p>New User? <a href="#" id="show-signup">Create an Account</a></p>
         </form>
-
         <div id="signup-section" style="display: none;">
-          <input type="text" id="signup-username" placeholder="Username" required />
-          <input type="email" id="signup-email" placeholder="Email" required />
-          <input type="password" id="signup-password" placeholder="Password" required />
-          <button id="signup-btn">Create Account</button>
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button>Create Account</button>
           <p>Already have an account? <a href="#" id="show-login">Login</a></p>
         </div>
       </div>
@@ -237,6 +225,119 @@
     <img src="landingpage7.jpg" alt="Image 4" />
     <div class="overlay-text">WELCOME TO FOMS!</div>
   </div>
+
+  <!-- <section>
+    <h2>How It Works</h2>
+    <ul class="how-it-works">
+      <li>Browse Menus – Discover dishes from top-rated local restaurants</li>
+      <li>Place Your Order – Customize and pay securely online</li>
+      <li>Track Your Meal – Real-time tracking until it reaches your door</li>
+      <li>Enjoy & Review – Dig in and let us know how we did!</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🍔 Popular Categories</h2>
+    <div class="categories">
+      <span>Pizza</span>
+      <span>Burger</span>
+      <span>Momos</span>
+      <span>Deserts</span>
+      <span>Desserts & Shakes</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>📞 Contact Us</h2>
+    <ul class="contact-info">
+      <li>📧 Email: support@blissbite.co.uk</li>
+      <li>📱 Call: 0800-123-FOOD</li>
+      <li>📍 HQ: 10 Camden High Street, London, UK</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📱 Connect With Us</h2>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </section> -->
+<!-- How It Works Section -->
+<section style="background-color: #fdfdfd; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 40px; color: #b12704;">How It Works</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+      <div style="background: #ffffff; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 1.3rem;">🍽 Browse Menus</h3>
+        <p>Explore delicious meals from top-rated restaurants.</p>
+      </div>
+      <div style="background: #ffffff; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 1.3rem;">🛒 Place Your Order</h3>
+        <p>Customize your food and pay securely online.</p>
+      </div>
+      <div style="background: #ffffff; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 1.3rem;">📦 Track Your Meal</h3>
+        <p>Follow your food in real time as it’s prepared and delivered.</p>
+      </div>
+      <div style="background: #ffffff; padding: 25px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 1.3rem;">⭐ Enjoy & Review</h3>
+        <p>Enjoy your meal and leave a review to support your favorite chefs!</p>
+      </div>
+    </div>
+   
+</section>
+
+<!-- Popular Categories Section -->
+<section style="background-color: #fefefe; padding: 60px 20px;">
+  <div style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 40px; color: #b12704;">Popular Categories</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 25px;">
+      <div style="background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <i class="fas fa-pizza-slice" style="font-size: 30px; color: #e67e22;"></i>
+        <p>Pizza</p>
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <i class="fas fa-hamburger" style="font-size: 30px; color: #d35400;"></i>
+        <p>Burger</p>
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <div style="font-size: 30px;">🥟</div>
+        <p>Momos</p>
+        
+        
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <i class="fas fa-ice-cream" style="font-size: 30px; color: #c0392b;"></i>
+        <p>Ice Cream</p>
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <i class="fas fa-blender" style="font-size: 30px; color: #884ea0;"></i>
+        <p>Shakes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section style="background-color: #fcfcfc; padding: 60px 20px;">
+  <div style="max-width: 700px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 30px; color: #b12704;">Contact Us</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 10px;">We're here to help with anything you need!</p>
+    <p><strong>📧 Email:</strong> support@foodorder.co.in</p>
+    <p><strong>📞 Phone:</strong> 97800-123-4567</p>
+    <p><strong>📍 Address:</strong> 10 High Street, India</p>
+  </div>
+</section>
+
+<section> <div style="margin-top: 30px; text-align: center;">
+  <a href="#" style="margin: 0 12px; color: #b12704; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+  <a href="#" style="margin: 0 12px; color: #b12704; font-size: 24px;"><i class="fab fa-facebook"></i></a>
+  <a href="#" style="margin: 0 12px; color: #b12704; font-size: 24px;"><i class="fab fa-x-twitter"></i></a>
+</div>
+</div></section>
+ 
 
   <script type="module" src="index.js"></script>
   <script type="module" src="firebase-config.js"></script>
